@@ -1,35 +1,30 @@
-# Clone the repository
-git clone https://github.com/username/repo-name.git
-cd repo-name
+## Initialize a new Git repository
+git init
 
-# Create directories and files
-mkdir JavaScript Python
-touch README.md
-
-# Stage and commit changes
+### Add files to staging area
 git add .
+
+### Commit the changes
 git commit -m "Initial commit"
 
-# Push changes to GitHub
-git push origin main
+### Add remote repository (replace with your GitHub repository URL)
+git remote add origin https://github.com/username/repo-name.git
 
-# Create and switch branches
-git checkout -b new-feature
+### Push the initial commit to GitHub
+git push -u origin main
 
-# Push a branch
-git push origin new-feature
+---
 
-# Merge and delete branch (after PR)
-git checkout main
-git merge new-feature
-git branch -d new-feature
-git push origin --delete new-feature
+## Updating Repo
 
-# Pull latest changes
-git pull origin main
-
-# Check repository status
+### Check repository status
 git status
 
-# View commit history
-git log
+### Add modified files to the staging area
+git add .
+
+### Commit the changes
+git commit -m "Describe your changes"
+
+### Push changes to the remote repository
+git push origin main
